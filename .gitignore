@@ -1,3 +1,5 @@
 .git/
 .idea/
 .mono/
+bin/
+obj/
