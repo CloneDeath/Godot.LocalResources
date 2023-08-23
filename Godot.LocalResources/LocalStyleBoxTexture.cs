@@ -1,7 +1,7 @@
 ﻿namespace Godot.LocalResources {
-	public class LocalStyleBoxTexture : StyleBoxTexture {
+	public partial class LocalStyleBoxTexture : StyleBoxTexture {
 		public LocalStyleBoxTexture() {
-			Texture = RelativeResource.Load<Texture>(GetType(), $"{GetType().Name}.png");
+			Texture = RelativeResource.Load<Texture2D>(GetType(), $"{GetType().Name}.png");
 		}
 	}
 }

@@ -1,8 +1,8 @@
 ﻿namespace Godot.LocalResources {
-	public abstract class LocalSprite : Sprite {
+	public abstract partial class LocalSprite : Sprite2D {
 		protected LocalSprite() {
 			Name = GetType().Name;
-			Texture = RelativeResource.Load<Texture>(GetType(), $"{GetType().Name}.png");
+			Texture = RelativeResource.Load<Texture2D>(GetType(), $"{GetType().Name}.png");
 		}
 	}
 }

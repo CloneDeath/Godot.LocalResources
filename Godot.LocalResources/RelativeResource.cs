@@ -11,7 +11,7 @@ namespace Godot.LocalResources {
 
 		public static string GetBasePath(Type localType) {
 			var namespaces = localType.Namespace?.Split('.');
-			var pathParts = namespaces?.Skip(1) ?? new string[0];
+			var pathParts = namespaces?.Skip(1) ?? Array.Empty<string>();
 			var path = string.Join("/", pathParts);
 			return $"res://{path}";
 		}
