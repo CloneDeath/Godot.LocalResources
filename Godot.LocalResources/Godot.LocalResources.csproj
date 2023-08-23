@@ -8,7 +8,7 @@
 		<PackageId>Godot.LocalResources</PackageId>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/CloneDeath/Godot.LocalResources</RepositoryUrl>
-		<PackageLicenseUrl>https://creativecommons.org/publicdomain/zero/1.0/</PackageLicenseUrl>
+		<PackageLicenseExpression>CC0-1.0</PackageLicenseExpression>
 	</PropertyGroup>
 	<Target Name="PrepareReleaseNotes" BeforeTargets="GenerateNuspec">
 		<PropertyGroup>
