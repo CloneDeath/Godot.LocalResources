@@ -3,6 +3,16 @@
 		<TargetFramework>net6.0</TargetFramework>
 		<EnableDynamicLoading>true</EnableDynamicLoading>
 		<WarningsAsErrors>True</WarningsAsErrors>
+	</PropertyGroup>
+	<PropertyGroup>
+		<PackageId>Godot.LocalResources</PackageId>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/CloneDeath/Godot.LocalResources</RepositoryUrl>
 		<PackageLicenseUrl>https://creativecommons.org/publicdomain/zero/1.0/</PackageLicenseUrl>
 	</PropertyGroup>
+	<Target Name="PrepareReleaseNotes" BeforeTargets="GenerateNuspec">
+		<PropertyGroup>
+			<PackageDescription>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/../RELEASE-NOTES"))</PackageDescription>
+		</PropertyGroup>
+	</Target>
 </Project>
